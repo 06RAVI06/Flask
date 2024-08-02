@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Welcome to Our Website</h1>
+    </header>
+    <main class="main-content">
+        <center>
+            <img class="logo" src="{{ url_for('static', filename='new-logo.png') }}" alt="Company Logo">
+            <br>
+            <a href="/logout" class="button">Logout</a>
+        </center>
+    </main>
+</body>
+</html>
+ 

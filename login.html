@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h2 class="title">Login Page</h2>
+    </header>
+    <main class="main-content">
+        <div class="form-container">
+            <form id="login" method="post" action="/login_validation">
+                <label><b>User Name</b></label>
+                <input type="text" name="Uname" id="Uname" placeholder="Username">
+                <br><br>
+                <label><b>Password</b></label>
+                <input type="password" name="Pass" id="Pass" placeholder="Password">
+                <br><br>
+                <button class="button">Login</button>
+                <br><br>
+                <label>New User? <a href="/register">Register here</a></label>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
+ 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h2 class="title">Registration Page</h2>
+    </header>
+    <main class="main-content">
+        <div class="form-container">
+            <form id="register" method="post" action="/add_user">
+                <label><b>User Name</b></label>
+                <input type="text" name="Uname" id="Uname" placeholder="Username">
+                <br><br>
+                <label><b>Email Id</b></label>
+                <input type="email" name="Email" id="Email" placeholder="xyz@gmail.com">
+                <br><br>
+                <label><b>Password</b></label>
+                <input type="password" name="Pass" id="Pass" placeholder="Password">
+                <br><br>
+                <button class="button">Register</button>
+                <br><br>
+                <label>Account already exists? <a href="/">Go Back</a></label>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
+ 
